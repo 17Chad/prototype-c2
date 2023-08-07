@@ -1,6 +1,6 @@
 **Prototype C2**
 
-CLEARTEXT IMPLANT COMMS - NOT FOR PRODUCTION
+*CLEARTEXT IMPLANT COMMS - NOT FOR PRODUCTION*
 Correctly runs commands, can cat etc. Only "sh -c $cmd" for now on embedded device. 
 Need to perfect the "download/get" and "upload/push" functions. For now, sentinel characters are appended to the data to show when a get/push is done. 
 
