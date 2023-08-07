@@ -1,4 +1,4 @@
-**Prototype C2 - Wyatt**
+**Prototype C2**
 
 Correctly runs commands, can cat etc. Only "sh -c $cmd" for now on embedded device. 
 Need to perfect the "download/get" and "upload/push" functions. For now, sentinel characters are appended to the data to show when a get/push is done. 
