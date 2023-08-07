@@ -2,7 +2,7 @@
 
 *CLEARTEXT IMPLANT COMMS - NOT FOR PRODUCTION*
 
-Correctly runs shell commands using0 "sh -c $cmd" for now. You can see the network diagram, however the gist is the rust implant will continously beacon to the python c2_app.py and see if there are commands to execute. The python c2_app.py checks the mysql database for commands pending to be executed (this could easily be turned into a web gui button/pseudo terminal). Then the python c2_app.py will send a GET to the database, grab the command, send it to the implant to be executed, and on return, the implant output will be given to the python c2_app.py and stored inside the mysql database. All of this is clear text and just to show proof of concept and learn a little bit of rust and have fun. 
+Correctly runs shell commands using "sh -c $cmd" for now. You can see the network diagram, however the gist is the rust implant will continously beacon to the python c2_app.py and see if there are commands to execute. The python c2_app.py checks the mysql database for commands pending to be executed (this could easily be turned into a web gui button/pseudo terminal). Then the python c2_app.py will send a GET to the database, grab the command, send it to the implant to be executed, and on return, the implant output will be given to the python c2_app.py and stored inside the mysql database. All of this is clear text and just to show proof of concept and learn a little bit of rust and have fun. 
 Note: Need to perfect the "download/get" and "upload/push" functionality. For now, sentinel characters are appended to the data to show when get/push data is completed on the wire so the connection can be closed.  
 
 **Getting Started**
