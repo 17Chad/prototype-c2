@@ -48,9 +48,3 @@ CREATE TABLE commands (
 );
 ```
 
-
-**Contributing**
-Guidelines for how to contribute to the project, including information on how to submit bug reports or feature requests, and how to submit pull requests.
-
-**Acknowledgements**
-Any acknowledgements or thanks to individuals or organizations who have contributed to the project, or whose work has inspired the project.
