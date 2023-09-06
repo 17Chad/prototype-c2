@@ -8,6 +8,8 @@ Rust implant correctly runs shell commands using "sh -c $cmd". You can see the n
 **Getting Started**
 
 ```
+*See network diagram for orientation*
+
 1. MySQL needs to be running    # listening 0.0.0.0:3306 
 2. python3 c2_app.py            # listening on 0.0.0.0:5000
 3. cargo run                    # connects to C2, callsback to 127.0.0.1:5000
@@ -16,7 +18,7 @@ Rust implant correctly runs shell commands using "sh -c $cmd". You can see the n
 ```
 
 
-**I am using dbeaver-ce and here are the MySQL tables/commands**
+**I am using dbeaver-ce for MySQL and here are the MySQL tables/commands**
 
 ```
 CREATE TABLE command_history (
