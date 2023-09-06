@@ -50,4 +50,4 @@ CREATE TABLE commands (
     FOREIGN KEY (implant_id) REFERENCES implants(id)
 );
 ```
-
+![alt text](https://github.com/stancemaxxx/prototype-c2/blob/main/prototype-c2-networkdiagram.png)
