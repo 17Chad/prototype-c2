@@ -2,6 +2,7 @@ use std::fs::File;
 use std::io::{Read, BufReader, Write};
 use std::path::Path;
 
+//Needs tp be fixed. Something is probably wrong with opening and closing bytestream
 pub fn run_download(command: &str) -> Result<Vec<u8>, Box<dyn std::error::Error>> {
     let args: Vec<&str> = command.split_whitespace().collect();
 
