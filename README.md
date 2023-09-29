@@ -12,7 +12,7 @@ Rust implant runs shell commands. Check the network diagram, however the gist is
 
 1. MySQL needs to be running    # listening 0.0.0.0:3306 
 2. python3 c2_app.py            # listening on 0.0.0.0:5000
-3. cargo run                    # connects to C2, callsback to 127.0.0.1:5000
+3. cargo run (the implant)      # connects to C2, callsback to 127.0.0.1:5000
 4. test_POST.py                 # puts a command in the database so when the implant calls in, the python c2_app.py pulls from the mysql database then tells the rust implant what to execute, waits for output, then stores the results in the database.
 5. c2_gui.py                    # GUI runs on 127.0.0.1:5001 - can run commands and get command output, which is stored in the mysql database. 
 ```
